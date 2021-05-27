@@ -17,3 +17,34 @@ html {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    //  filter: drop-shadow(2px 4px 8px #585858);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}

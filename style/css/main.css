@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,9 +15,36 @@ html {
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent; }
 
+h1,
+h2 {
+  font-weight: 600; }
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.align-items-center {
+  align-items: center; }
+
 body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee); }
+  background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee);
+  padding: 5vh 1.5rem; }
   body::before {
     content: ' ';
     position: fixed;
@@ -35,4 +63,72 @@ body {
 section {
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  min-height: 90vh; }
+  min-height: 90vh;
+  border-radius: 3rem;
+  backdrop-filter: blur(5px); }
+
+.container {
+  width: 100%;
+  padding: 0 4rem; }
+
+.btn {
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 1rem 2.8rem;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  border-radius: 3rem;
+  color: #e02f6b;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: color 0.3s ease; }
+  .btn::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #e02f6b;
+    z-index: -1;
+    transition: width 0.3s ease; }
+  .btn:hover::before {
+    width: 100%; }
+  .btn:hover {
+    color: #ffffff; }
+
+.home {
+  display: flex;
+  padding: 12rem 0; }
+  .home-text {
+    width: 50%;
+    padding: 1.5rem; }
+    .home-text p {
+      font-size: 1.8rem; }
+    .home-text h1 {
+      font-size: 5rem;
+      text-transform: capitalize; }
+    .home-text h2 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: 300;
+      margin: 0 0 3rem; }
+  .home-img {
+    width: 50%;
+    padding: 1.5rem; }
+    .home-img .img-box {
+      max-width: 36rem;
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 50%;
+      border: 0.8rem solid rgba(255, 255, 255, 0.25);
+      margin: auto; }
+      .home-img .img-box img {
+        width: 100%;
+        border-radius: 50%; }

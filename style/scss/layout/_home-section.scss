@@ -1,0 +1,37 @@
+.home {
+    display: flex;
+    padding: 12rem 0;
+    &-text {
+        width: 50%;
+        padding: 1.5rem;
+        p {
+            font-size: 1.8rem;
+        }
+        h1 {
+            font-size: 5rem;
+            text-transform: capitalize;
+        }
+        h2 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 300;
+            margin: 0 0 3rem;
+        }
+    }
+    &-img {
+        width: 50%;
+        padding: 1.5rem;
+        .img-box {
+            max-width: 36rem;
+            background-color: $white-alpha-25;
+            border-radius: 50%;
+            border: 0.8rem solid $white-alpha-25;
+            margin: auto;
+            img {
+                width: 100%;
+                border-radius: 50%;
+                // 307 	x 	400
+            }
+        }
+    }
+}

@@ -3,4 +3,6 @@ section {
     background-color: $white-alpha-25;
     border: 1px solid $white-alpha-40;
     min-height: 90vh;
+    border-radius: 3rem;
+    backdrop-filter: $backdrop-filter-blur;
 }

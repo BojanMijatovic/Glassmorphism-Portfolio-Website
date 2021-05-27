@@ -1,7 +1,10 @@
 @import '../core/variables';
 body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     min-height: 100vh;
     background-image: linear-gradient( to bottom right, $pink-light-color, $cyan-light-color);
+    padding: 5vh 1.5rem;
     &::before {
         content: ' ';
         position: fixed;
