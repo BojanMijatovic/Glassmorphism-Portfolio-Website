@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     background-image: linear-gradient( to bottom right, $pink-light-color, $cyan-light-color);
     padding: 5vh 1.5rem;
+    background-attachment: fixed;
     &::before {
         content: ' ';
         position: fixed;

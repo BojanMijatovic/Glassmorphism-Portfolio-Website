@@ -28,6 +28,10 @@ h6 {
 a {
   text-decoration: none; }
 
+button {
+  font-family: inherit;
+  user-select: none; }
+
 img {
   max-width: 100%;
   vertical-align: middle; }
@@ -39,12 +43,16 @@ img {
 .align-items-center {
   align-items: center; }
 
+.hidden {
+  display: none !important; }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   min-height: 100vh;
   background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee);
-  padding: 5vh 1.5rem; }
+  padding: 5vh 1.5rem;
+  background-attachment: fixed; }
   body::before {
     content: ' ';
     position: fixed;
@@ -66,6 +74,9 @@ section {
   min-height: 90vh;
   border-radius: 3rem;
   backdrop-filter: blur(5px); }
+
+.sec-padding {
+  padding: 8rem 0; }
 
 .container {
   width: 100%;
@@ -104,6 +115,42 @@ section {
   .btn:hover {
     color: #ffffff; }
 
+.btn-tab-item {
+  padding: 0.2rem 0;
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  display: inline-block;
+  color: #18293c;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0 3rem 0 0;
+  position: relative;
+  opacity: 0.5;
+  transition: all 0.3s ease; }
+  .btn-tab-item:hover::before {
+    width: 100%; }
+  .btn-tab-item::before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #18293c;
+    transition: width ease 0.3s; }
+  .btn-tab-item:last-child {
+    margin: 0; }
+
+.active {
+  color: #e02f6b;
+  opacity: 1;
+  cursor: auto; }
+  .active::before {
+    width: 100%;
+    background-color: #e02f6b; }
+
 .home {
   display: flex;
   padding: 12rem 0; }
@@ -132,3 +179,67 @@ section {
       .home-img .img-box img {
         width: 100%;
         border-radius: 50%; }
+
+::-webkit-scrollbar {
+  width: 0.5rem; }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #e02f6b; }
+
+.about .title {
+  padding: 0 1.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4rem; }
+  .about .title h2 {
+    font-size: 4rem;
+    text-transform: capitalize; }
+.about .about-img {
+  width: 40%;
+  padding: 0 1.5rem; }
+  .about .about-img .img-box {
+    background-color: rgba(255, 255, 255, 0.25);
+    max-width: 30rem;
+    margin: auto;
+    border-radius: 1rem; }
+    .about .about-img .img-box img {
+      width: 100%; }
+.about .about-text {
+  width: 60%;
+  padding: 0 1.5rem; }
+  .about .about-text h3 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 2rem 0; }
+  .about .about-text .about-skills {
+    display: flex;
+    flex-wrap: wrap; }
+    .about .about-text .about-skills .item {
+      background-color: rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 0.5rem 1.5rem;
+      text-transform: capitalize;
+      margin: 0 1rem 1rem 0;
+      border-radius: 2rem; }
+  .about .about-text .about-tabs {
+    margin-top: 2rem; }
+  .about .about-text .tab-content {
+    padding: 4rem 0; }
+    .about .about-text .tab-content .timeline-item {
+      margin-bottom: 3rem; }
+      .about .about-text .tab-content .timeline-item .date {
+        display: block;
+        color: #e02f6b;
+        font-weight: 400;
+        margin: 0 0 1rem; }
+      .about .about-text .tab-content .timeline-item h4 {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        margin: 0 0 1rem; }
+        .about .about-text .tab-content .timeline-item h4 span {
+          font-weight: 400; }
+      .about .about-text .tab-content .timeline-item:last-child {
+        margin-bottom: 0; }

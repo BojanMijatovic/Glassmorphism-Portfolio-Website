@@ -34,6 +34,11 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: inherit;
+    user-select: none;
+}
+
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -47,4 +52,8 @@ img {
 
 .align-items-center {
     align-items: center;
+}
+
+.hidden {
+    display: none !important;
 }

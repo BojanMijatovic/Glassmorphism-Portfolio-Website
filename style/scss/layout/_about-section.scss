@@ -1,0 +1,79 @@
+.about {
+    .title {
+        padding: 0 1.5rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+        h2 {
+            font-size: 4rem;
+            text-transform: capitalize;
+        }
+    }
+    .about-img {
+        width: 40%;
+        padding: 0 1.5rem;
+        .img-box {
+            background-color: $white-alpha-25;
+            max-width: 30rem;
+            margin: auto;
+            border-radius: 1rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    // text
+    .about-text {
+        width: 60%;
+        padding: 0 1.5rem;
+        h3 {
+            text-transform: capitalize;
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+        // skills
+        .about-skills {
+            display: flex;
+            flex-wrap: wrap;
+            .item {
+                background-color: $white-alpha-25;
+                border: 1px solid $white-alpha-40;
+                padding: 0.5rem 1.5rem;
+                text-transform: capitalize;
+                margin: 0 1rem 1rem 0;
+                border-radius: 2rem;
+            }
+        }
+        // tabs
+        .about-tabs {
+            margin-top: 2rem;
+        }
+        // content
+        .tab-content {
+            padding: 4rem 0;
+            .timeline {
+                &-item {
+                    margin-bottom: 3rem;
+                    // date
+                    .date {
+                        display: block;
+                        color: $main-color;
+                        font-weight: 400;
+                        margin: 0 0 1rem;
+                    }
+                    h4 {
+                        font-size: 1.8rem;
+                        text-transform: capitalize;
+                        margin: 0 0 1rem;
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -34,3 +34,45 @@
         color: $white-color;
     }
 }
+
+.btn-tab-item {
+    padding: 0.2rem 0;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: $blue-dark-color;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 3rem 0 0;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    &:hover::before {
+        width: 100%;
+    }
+    &::before {
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: $blue-dark-color;
+        transition: width ease 0.3s;
+    }
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.active {
+    color: $main-color;
+    opacity: 1;
+    cursor: auto;
+    &::before {
+        width: 100%;
+        background-color: $main-color;
+    }
+}
