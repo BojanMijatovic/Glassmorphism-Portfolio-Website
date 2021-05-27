@@ -1,0 +1,16 @@
+@import '../core/variables';
+body {
+    min-height: 100vh;
+    background-image: linear-gradient( to bottom right, $pink-light-color, $cyan-light-color);
+    &::before {
+        content: ' ';
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $green-yellow-color;
+        z-index: -1;
+        opacity: 0.12;
+    }
+}
