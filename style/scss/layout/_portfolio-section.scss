@@ -34,7 +34,6 @@
     width: 100%;
     height: 100%;
     z-index: 200;
-    overflow-y: auto;
     visibility: hidden;
     .pp-inner {
         min-height: 100vh;
@@ -97,4 +96,10 @@
             }
         }
     }
+}
+
+// toggle class
+.open {
+    visibility: visible;
+    overflow-y: auto;
 }
