@@ -19,7 +19,6 @@ tabsContainer.addEventListener('click', (e) => {
 });
 
 //  portfolio popup
-
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('btn-view-project')) {
     togglePopup();
@@ -53,3 +52,19 @@ document.addEventListener('click', (e) => {
     togglePopup();
   }
 });
+
+//  toggle navbar
+
+const navToggler = document.querySelector('.nav-toggler');
+navToggler.addEventListener('click', (e) => {
+  hideSection();
+  toggleNavbar();
+});
+
+const hideSection = () => {
+  document.querySelector('section.active').classList.toggle('fade-out');
+};
+
+const toggleNavbar = () => {
+  document.querySelector('.header').classList.toggle('active');
+};

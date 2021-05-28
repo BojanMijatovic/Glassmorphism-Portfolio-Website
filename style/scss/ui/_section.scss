@@ -2,9 +2,10 @@
 section {
     background-color: $white-alpha-25;
     border: 1px solid $white-alpha-40;
-    min-height: 90vh;
+    min-height: calc(100vh - 7rem);
     border-radius: 3rem;
     backdrop-filter: $backdrop-filter-blur;
+    display: none;
     .title {
         padding: 0 1.5rem;
         width: 100%;
@@ -17,6 +18,14 @@ section {
     }
 }
 
+.active {
+    display: block;
+}
+
+section.fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
 .sec-padding {
     padding: 8rem 0;
 }
@@ -25,6 +34,7 @@ section {
     max-width: 120rem;
     margin: auto;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .fade-out {

@@ -1,5 +1,5 @@
 .home {
-    display: flex;
+    // display: flex;
     padding: 12rem 0;
     &-text {
         width: 50%;
@@ -34,4 +34,8 @@
             }
         }
     }
+}
+
+.active {
+    display: flex;
 }

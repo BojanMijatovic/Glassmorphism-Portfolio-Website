@@ -1,0 +1,67 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 2rem 0 0;
+    .nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 3.5rem 1.5rem;
+        overflow-y: auto;
+        visibility: hidden;
+        .nav-inner {
+            min-height: calc((100vh - 70px));
+            background-color: $white-alpha-25;
+            max-width: 120rem;
+            margin: auto;
+            border: 1px solid $white-alpha-40;
+            backdrop-filter: $backdrop-filter-blur;
+            padding: 5rem 0;
+            border-radius: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                li {
+                    text-align: center;
+                    a {
+                        font-size: 4rem;
+                        text-transform: capitalize;
+                        color: $blue-dark-color;
+                        display: block;
+                        font-weight: 500;
+                        padding: 0.8rem 1.5rem;
+                        transition: color 0.3s ease;
+                        position: relative;
+                        &:hover {
+                            color: $main-color;
+                            &::before {
+                                width: 100%;
+                            }
+                        }
+                        &::before {
+                            content: ' ';
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            height: 50%;
+                            background-color: $white-alpha-25;
+                            width: 0%;
+                            z-index: -1;
+                            transition: width 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header.active .nav {
+    visibility: visible;
+}

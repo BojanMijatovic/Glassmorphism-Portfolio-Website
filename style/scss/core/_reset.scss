@@ -16,7 +16,6 @@ html {
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-    scroll-behavior: 'smooth';
 }
 
 h1,
@@ -61,4 +60,8 @@ img {
 
 .hidden {
     display: none !important;
+}
+
+.flex-end {
+    justify-content: flex-end;
 }
