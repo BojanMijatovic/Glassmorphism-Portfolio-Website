@@ -359,3 +359,55 @@ section {
 .open {
   visibility: visible;
   overflow-y: auto; }
+
+.contact .contact-form {
+  width: 50%;
+  padding: 0 1.5rem; }
+  .contact .contact-form .input-group {
+    width: 100%;
+    margin-bottom: 3rem; }
+    .contact .contact-form .input-group .input-control {
+      display: block;
+      width: 100%;
+      height: 5rem;
+      border-radius: 2.5rem;
+      border: none;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 1.6rem;
+      background-color: rgba(255, 255, 255, 0.25);
+      padding: 0 3rem;
+      color: #18293c;
+      border: 1px solid transparent;
+      transition: border 0.3s ease-in-out; }
+      .contact .contact-form .input-group .input-control::placeholder {
+        color: #18293c;
+        opacity: 0.8;
+        font-weight: 300; }
+      .contact .contact-form .input-group .input-control:focus {
+        border-color: rgba(255, 255, 255, 0.4); }
+.contact .contact-info {
+  width: 50%;
+  padding: 0 1.5rem; }
+  .contact .contact-info .contact-info-item {
+    margin: 0 0 3rem;
+    padding: 0 0 0 2rem; }
+    .contact .contact-info .contact-info-item h3 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin: 0 0 0.5rem; }
+    .contact .contact-info .contact-info-item .social-links a {
+      display: inline-flex;
+      height: 4rem;
+      width: 4rem;
+      background-color: rgba(255, 255, 255, 0.25);
+      align-items: center;
+      justify-content: center;
+      color: #18293c;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      margin: 1rem 1rem 0 0;
+      transition: all 0.3s ease-in-out; }
+      .contact .contact-info .contact-info-item .social-links a:hover {
+        color: #ffffff;
+        background-color: #18293c; }
