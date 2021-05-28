@@ -5,6 +5,16 @@ section {
     min-height: 90vh;
     border-radius: 3rem;
     backdrop-filter: $backdrop-filter-blur;
+    .title {
+        padding: 0 1.5rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+        h2 {
+            font-size: 4rem;
+            text-transform: capitalize;
+        }
+    }
 }
 
 .sec-padding {

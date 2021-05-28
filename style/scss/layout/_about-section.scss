@@ -1,14 +1,4 @@
 .about {
-    .title {
-        padding: 0 1.5rem;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 4rem;
-        h2 {
-            font-size: 4rem;
-            text-transform: capitalize;
-        }
-    }
     .about-img {
         width: 40%;
         padding: 0 1.5rem;
@@ -47,13 +37,38 @@
         // tabs
         .about-tabs {
             margin-top: 2rem;
+            //  some tabs here !!!!!!!!!!!!!!!!!!!!
+            display: flex;
         }
         // content
         .tab-content {
             padding: 4rem 0;
+            display: none;
             .timeline {
+                position: relative;
+                &::before {
+                    content: ' ';
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    top: 0;
+                    left: 0.5rem;
+                    background-color: $main-color;
+                }
                 &-item {
                     margin-bottom: 3rem;
+                    position: relative;
+                    padding: 1rem 0 0 4rem;
+                    &::before {
+                        content: ' ';
+                        position: absolute;
+                        height: 1.1rem;
+                        width: 1.1rem;
+                        background-color: $main-color;
+                        left: 0;
+                        top: 1.6rem;
+                        border-radius: 50%;
+                    }
                     // date
                     .date {
                         display: block;
@@ -74,6 +89,12 @@
                     }
                 }
             }
+        }
+        .active {
+            display: block;
+        }
+        .btn {
+            margin: 0 1.5rem 1.5rem 0;
         }
     }
 }
