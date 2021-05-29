@@ -16,3 +16,25 @@
         opacity: 1;
     }
 }
+
+// zoomInOut
+@keyframes zoomInOut {
+    0%,
+    100% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+// bounceTop
+@keyframes bounceTop {
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+}

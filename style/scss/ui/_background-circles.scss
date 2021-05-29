@@ -1,0 +1,49 @@
+@import '../abstracts/animations';
+.bg-circles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 120rem;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    div {
+        position: absolute;
+        border-radius: 50%;
+    }
+    .circle-1 {
+        width: 6rem;
+        height: 6rem;
+        background-color: blue;
+        left: 5%;
+        top: 10%;
+        opacity: 0.3;
+        animation: zoomInOut 8s linear infinite;
+    }
+    .circle-2 {
+        height: 8rem;
+        width: 8rem;
+        background-color: $main-color;
+        left: 30%;
+        top: 50%;
+        opacity: 0.4;
+        animation: bounceTop 5s ease-in-out infinite;
+    }
+    .circle-3 {
+        width: 12rem;
+        height: 12rem;
+        background-color: $white-color;
+        bottom: 10%;
+        right: 2%;
+        opacity: 0.5;
+    }
+    .circle-4 {
+        height: 5rem;
+        width: 5rem;
+        background-color: $orange-color;
+        top: 80%;
+        left: -3rem;
+        opacity: 0.6;
+    }
+}
