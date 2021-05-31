@@ -2,6 +2,10 @@
     .contact-form {
         width: 50%;
         padding: 0 1.5rem;
+        // responsive
+        @include media-medium-1 {
+            width: 100%;
+        }
         .input-group {
             width: 100%;
             margin-bottom: 3rem;
@@ -33,13 +37,27 @@
     .contact-info {
         width: 50%;
         padding: 0 1.5rem;
+        // responsive
+        @include media-medium-1 {
+            width: 100%;
+            order: -1;
+            margin-bottom: 1.5rem;
+        }
         .contact-info-item {
             margin: 0 0 3rem;
             padding: 0 0 0 2rem;
+            // responsive
+            @include media-medium-1 {
+                padding: 0;
+            }
             h3 {
                 font-size: 2rem;
                 text-transform: capitalize;
                 margin: 0 0 0.5rem;
+                color: $blue-dark-color;
+            }
+            p {
+                color: $blue-dark-color;
             }
             //  links
             .social-links a {

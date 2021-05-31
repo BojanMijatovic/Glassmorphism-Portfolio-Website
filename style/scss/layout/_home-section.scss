@@ -5,29 +5,51 @@
         width: 50%;
         padding: 1.5rem;
         color: $blue-dark-color;
+        // responsive
+        @include media-medium-2 {
+            width: 100%;
+            text-align: center;
+        }
         p {
             font-size: 1.8rem;
         }
         h1 {
             font-size: 5rem;
             text-transform: capitalize;
+            // responsive
+            @include media-sm {
+                font-size: 3rem;
+            }
         }
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             text-transform: capitalize;
             font-weight: 300;
             margin: 0 0 3rem;
+            // responsive
+            @include media-sm {
+                font-size: 1.8rem;
+            }
         }
     }
     &-img {
         width: 50%;
         padding: 1.5rem;
+        // responsive
+        @include media-medium-2 {
+            width: 100%;
+            order: -1;
+        }
         .img-box {
             max-width: 36rem;
             background-color: $white-alpha-25;
             border-radius: 50%;
             border: 0.8rem solid $white-alpha-25;
             margin: auto;
+            // responsive
+            @include media-medium-2 {
+                max-width: 30rem;
+            }
             img {
                 width: 100%;
                 border-radius: 50%;
@@ -39,4 +61,11 @@
 
 .active {
     display: flex;
+}
+
+// responsive
+.home-text .btn {
+    @include media-medium-2 {
+        margin: 0 0.7rem 1.5rem;
+    }
 }

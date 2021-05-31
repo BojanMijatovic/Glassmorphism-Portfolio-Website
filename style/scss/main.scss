@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import './core/reset';
 @import './core/variables';
+@import './core/responsive';
 @import './layout/body';
 @import './layout/main-body';
 @import './ui/custom-scrollBar';
@@ -15,3 +16,4 @@
 @import './abstracts/animations';
 @import './ui/overlay';
 @import './ui/background-circles';
+@import './abstracts/page-loader';

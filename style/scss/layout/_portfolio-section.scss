@@ -1,9 +1,15 @@
 .portfolio {
     padding-bottom: 5rem;
     &-item {
-        //  and here!!!!
-        width: calc((100% / 3.3));
+        width: calc((100% / 3) -3rem);
         margin: 0 1.5rem 3rem;
+        // responsive
+        @include media-medium-2 {
+            width: calc((50% - 3rem));
+        }
+        @include media-medium-1 {
+            width: calc((100% - 3rem));
+        }
         &-thumbnail {
             padding: 1rem;
             background-color: $white-alpha-25;
@@ -40,6 +46,10 @@
         padding: 4rem 1.5rem;
         display: flex;
         justify-content: center;
+        // responsive
+        @include media-medium-1 {
+            padding: 3rem 1.5rem;
+        }
         .pp-content {
             background-color: $white-alpha-25;
             padding: 3rem;
@@ -54,6 +64,9 @@
                     font-size: 2.5rem;
                     text-transform: capitalize;
                     margin: 2rem 0 1.5rem;
+                    @include media-sm {
+                        font-size: 2rem;
+                    }
                 }
                 .btn {
                     height: 4rem;

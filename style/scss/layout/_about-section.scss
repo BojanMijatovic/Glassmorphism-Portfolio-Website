@@ -2,6 +2,10 @@
     .about-img {
         width: 40%;
         padding: 0 1.5rem;
+        // responsive
+        @include media-medium-1 {
+            width: 100%;
+        }
         .img-box {
             background-color: $white-alpha-25;
             max-width: 30rem;
@@ -16,10 +20,19 @@
     .about-text {
         width: 60%;
         padding: 0 1.5rem;
+        p {
+            color: $blue-dark-color;
+        }
+        // responsive
+        @include media-medium-1 {
+            width: 100%;
+            margin-top: 3rem;
+        }
         h3 {
             text-transform: capitalize;
             font-size: 2rem;
             margin: 2rem 0;
+            color: $blue-dark-color;
         }
         // skills
         .about-skills {
@@ -32,6 +45,8 @@
                 text-transform: capitalize;
                 margin: 0 1rem 1rem 0;
                 border-radius: 2rem;
+                color: $blue-dark-color;
+                font-weight: 500;
             }
         }
         // tabs
@@ -80,6 +95,7 @@
                         font-size: 1.8rem;
                         text-transform: capitalize;
                         margin: 0 0 1rem;
+                        color: $blue-dark-color;
                         span {
                             font-weight: 400;
                         }

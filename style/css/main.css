@@ -25,6 +25,12 @@ h5,
 h6 {
   font-weight: 500; }
 
+p {
+  font-size: 1.6rem; }
+
+span {
+  font-size: 1.5rem; }
+
 a {
   text-decoration: none; }
 
@@ -52,6 +58,9 @@ img {
 .flex-end {
   justify-content: flex-end; }
 
+/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 992px and up) */
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -99,7 +108,11 @@ section {
     margin-bottom: 4rem; }
     section .title h2 {
       font-size: 4rem;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      color: #18293c; }
+      @media screen and (max-width: 575px) {
+        section .title h2 {
+          font-size: 3.5rem; } }
 
 section.active {
   display: block;
@@ -123,6 +136,9 @@ section.fade-out {
 .container {
   width: 100%;
   padding: 0 4rem; }
+  @media only screen and (max-width: 992px) {
+    .container {
+      padding: 0; } }
 
 .btn {
   line-height: 1.5;
@@ -199,25 +215,42 @@ section.fade-out {
     width: 50%;
     padding: 1.5rem;
     color: #18293c; }
+    @media only screen and (max-width: 992px) {
+      .home-text {
+        width: 100%;
+        text-align: center; } }
     .home-text p {
       font-size: 1.8rem; }
     .home-text h1 {
       font-size: 5rem;
       text-transform: capitalize; }
+      @media screen and (max-width: 575px) {
+        .home-text h1 {
+          font-size: 3rem; } }
     .home-text h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-transform: capitalize;
       font-weight: 300;
       margin: 0 0 3rem; }
+      @media screen and (max-width: 575px) {
+        .home-text h2 {
+          font-size: 1.8rem; } }
   .home-img {
     width: 50%;
     padding: 1.5rem; }
+    @media only screen and (max-width: 992px) {
+      .home-img {
+        width: 100%;
+        order: -1; } }
     .home-img .img-box {
       max-width: 36rem;
       background-color: rgba(255, 255, 255, 0.25);
       border-radius: 50%;
       border: 0.8rem solid rgba(255, 255, 255, 0.25);
       margin: auto; }
+      @media only screen and (max-width: 992px) {
+        .home-img .img-box {
+          max-width: 30rem; } }
       .home-img .img-box img {
         width: 100%;
         border-radius: 50%; }
@@ -225,9 +258,16 @@ section.fade-out {
 .active {
   display: flex; }
 
+@media only screen and (max-width: 992px) {
+  .home-text .btn {
+    margin: 0 0.7rem 1.5rem; } }
+
 .about .about-img {
   width: 40%;
   padding: 0 1.5rem; }
+  @media only screen and (max-width: 768px) {
+    .about .about-img {
+      width: 100%; } }
   .about .about-img .img-box {
     background-color: rgba(255, 255, 255, 0.25);
     max-width: 30rem;
@@ -238,10 +278,17 @@ section.fade-out {
 .about .about-text {
   width: 60%;
   padding: 0 1.5rem; }
+  .about .about-text p {
+    color: #18293c; }
+  @media only screen and (max-width: 768px) {
+    .about .about-text {
+      width: 100%;
+      margin-top: 3rem; } }
   .about .about-text h3 {
     text-transform: capitalize;
     font-size: 2rem;
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    color: #18293c; }
   .about .about-text .about-skills {
     display: flex;
     flex-wrap: wrap; }
@@ -251,7 +298,9 @@ section.fade-out {
       padding: 0.5rem 1.5rem;
       text-transform: capitalize;
       margin: 0 1rem 1rem 0;
-      border-radius: 2rem; }
+      border-radius: 2rem;
+      color: #18293c;
+      font-weight: 500; }
   .about .about-text .about-tabs {
     margin-top: 2rem;
     display: flex; }
@@ -289,7 +338,8 @@ section.fade-out {
         .about .about-text .tab-content .timeline-item h4 {
           font-size: 1.8rem;
           text-transform: capitalize;
-          margin: 0 0 1rem; }
+          margin: 0 0 1rem;
+          color: #18293c; }
           .about .about-text .tab-content .timeline-item h4 span {
             font-weight: 400; }
         .about .about-text .tab-content .timeline-item:last-child {
@@ -302,8 +352,14 @@ section.fade-out {
 .portfolio {
   padding-bottom: 5rem; }
   .portfolio-item {
-    width: calc((100% / 3.3));
+    width: calc((100% / 3) -3rem);
     margin: 0 1.5rem 3rem; }
+    @media only screen and (max-width: 992px) {
+      .portfolio-item {
+        width: calc((50% - 3rem)); } }
+    @media only screen and (max-width: 768px) {
+      .portfolio-item {
+        width: calc((100% - 3rem)); } }
     .portfolio-item-thumbnail {
       padding: 1rem;
       background-color: rgba(255, 255, 255, 0.25);
@@ -332,6 +388,9 @@ section.fade-out {
     padding: 4rem 1.5rem;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .portfolio-popup .pp-inner {
+        padding: 3rem 1.5rem; } }
     .portfolio-popup .pp-inner .pp-content {
       background-color: rgba(255, 255, 255, 0.25);
       padding: 3rem;
@@ -346,6 +405,9 @@ section.fade-out {
           font-size: 2.5rem;
           text-transform: capitalize;
           margin: 2rem 0 1.5rem; }
+          @media screen and (max-width: 575px) {
+            .portfolio-popup .pp-inner .pp-content .pp-header h3 {
+              font-size: 2rem; } }
         .portfolio-popup .pp-inner .pp-content .pp-header .btn {
           height: 4rem;
           width: 4rem;
@@ -377,6 +439,9 @@ section.fade-out {
 .contact .contact-form {
   width: 50%;
   padding: 0 1.5rem; }
+  @media only screen and (max-width: 768px) {
+    .contact .contact-form {
+      width: 100%; } }
   .contact .contact-form .input-group {
     width: 100%;
     margin-bottom: 3rem; }
@@ -403,13 +468,24 @@ section.fade-out {
 .contact .contact-info {
   width: 50%;
   padding: 0 1.5rem; }
+  @media only screen and (max-width: 768px) {
+    .contact .contact-info {
+      width: 100%;
+      order: -1;
+      margin-bottom: 1.5rem; } }
   .contact .contact-info .contact-info-item {
     margin: 0 0 3rem;
     padding: 0 0 0 2rem; }
+    @media only screen and (max-width: 768px) {
+      .contact .contact-info .contact-info-item {
+        padding: 0; } }
     .contact .contact-info .contact-info-item h3 {
       font-size: 2rem;
       text-transform: capitalize;
-      margin: 0 0 0.5rem; }
+      margin: 0 0 0.5rem;
+      color: #18293c; }
+    .contact .contact-info .contact-info-item p {
+      color: #18293c; }
     .contact .contact-info .contact-info-item .social-links a {
       display: inline-flex;
       height: 4rem;
@@ -467,6 +543,9 @@ section.fade-out {
           padding: 0.8rem 1.5rem;
           transition: color 0.3s ease;
           position: relative; }
+          @media screen and (max-width: 575px) {
+            .header .nav .nav-inner ul li a {
+              font-size: 3.5rem; } }
           .header .nav .nav-inner ul li a:hover {
             color: #e02f6b; }
             .header .nav .nav-inner ul li a:hover::before {
@@ -566,7 +645,11 @@ section {
     margin-bottom: 4rem; }
     section .title h2 {
       font-size: 4rem;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      color: #18293c; }
+      @media screen and (max-width: 575px) {
+        section .title h2 {
+          font-size: 3.5rem; } }
 
 section.active {
   display: block;
@@ -609,6 +692,11 @@ section.fade-out {
     transform: translateY(-50px); }
   50% {
     transform: translateY(50px); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .overlay {
   position: fixed;
   left: 0;
@@ -637,7 +725,11 @@ section {
     margin-bottom: 4rem; }
     section .title h2 {
       font-size: 4rem;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      color: #18293c; }
+      @media screen and (max-width: 575px) {
+        section .title h2 {
+          font-size: 3.5rem; } }
 
 section.active {
   display: block;
@@ -680,6 +772,11 @@ section.fade-out {
     transform: translateY(-50px); }
   50% {
     transform: translateY(50px); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .bg-circles {
   position: fixed;
   top: 0;
@@ -722,3 +819,146 @@ section.fade-out {
     top: 80%;
     left: -3rem;
     opacity: 0.6; }
+
+section {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  min-height: calc(100vh - 7rem);
+  border-radius: 3rem;
+  backdrop-filter: blur(5px);
+  display: none; }
+  section .title {
+    padding: 0 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem; }
+    section .title h2 {
+      font-size: 4rem;
+      text-transform: capitalize;
+      color: #18293c; }
+      @media screen and (max-width: 575px) {
+        section .title h2 {
+          font-size: 3.5rem; } }
+
+section.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out; }
+
+section.fade-out {
+  animation: fadeOut 0.5s ease-in-out; }
+
+.sec-padding {
+  padding: 8rem 0; }
+
+.main {
+  max-width: 120rem;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  position: relative; }
+
+.fade-out {
+  opacity: 0; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes zoomInOut {
+  0%,
+    100% {
+    transform: scale(0.5); }
+  50% {
+    transform: scale(1); } }
+@keyframes bounceTop {
+  0%,
+    100% {
+    transform: translateY(-50px); }
+  50% {
+    transform: translateY(50px); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+section {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  min-height: calc(100vh - 7rem);
+  border-radius: 3rem;
+  backdrop-filter: blur(5px);
+  display: none; }
+  section .title {
+    padding: 0 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem; }
+    section .title h2 {
+      font-size: 4rem;
+      text-transform: capitalize;
+      color: #18293c; }
+      @media screen and (max-width: 575px) {
+        section .title h2 {
+          font-size: 3.5rem; } }
+
+section.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out; }
+
+section.fade-out {
+  animation: fadeOut 0.5s ease-in-out; }
+
+.sec-padding {
+  padding: 8rem 0; }
+
+.main {
+  max-width: 120rem;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  position: relative; }
+
+.fade-out {
+  opacity: 0; }
+
+.page-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease; }
+  .page-loader .loader {
+    border: 2px solid transparent;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    animation: spin 1s linear infinite; }
+    .page-loader .loader:nth-child(1) {
+      height: 6rem;
+      width: 6rem;
+      border-color: #e02f6b; }
+    .page-loader .loader:nth-child(2) {
+      height: 4.5rem;
+      width: 4.5rem;
+      border-color: #0000ff;
+      animation-duration: 1.2s; }
+    .page-loader .loader:nth-child(3) {
+      height: 3rem;
+      width: 3rem;
+      border-color: #ffa500; }
+
+.page-loader.fade-out {
+  opacity: 0; }
