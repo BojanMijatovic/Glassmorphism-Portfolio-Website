@@ -22,6 +22,7 @@
         padding: 0 1.5rem;
         p {
             color: $blue-dark-color;
+            font-size: 1.8rem;
         }
         // responsive
         @include media-medium-1 {
@@ -42,11 +43,12 @@
                 background-color: $white-alpha-25;
                 border: 1px solid $white-alpha-40;
                 padding: 0.5rem 1.5rem;
-                text-transform: capitalize;
+                text-transform: uppercase;
                 margin: 0 1rem 1rem 0;
                 border-radius: 2rem;
                 color: $blue-dark-color;
                 font-weight: 500;
+                font-size: 1.6rem;
             }
         }
         // tabs
@@ -98,6 +100,7 @@
                         color: $blue-dark-color;
                         span {
                             font-weight: 400;
+                            font-size: 1.8rem;
                         }
                     }
                     &:last-child {
