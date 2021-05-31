@@ -149,6 +149,7 @@ section.fade-out {
   border-radius: 3rem;
   color: #e02f6b;
   font-weight: 500;
+  font-size: 1.6rem;
   text-transform: capitalize;
   border: 1px solid rgba(255, 255, 255, 0.4);
   font-family: inherit;
