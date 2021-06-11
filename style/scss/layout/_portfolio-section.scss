@@ -91,14 +91,19 @@
                 // description
                 .description {
                     margin-bottom: 2rem;
+                    p {
+                        font-size: 1.8rem;
+                    }
                 }
                 .general-info {
                     li {
                         margin-bottom: 1rem;
                         font-weight: 500;
                         text-transform: capitalize;
+                        font-size: 1.8rem;
                         span {
                             font-weight: 300;
+                            font-size: 1.8rem;
                         }
                         a {
                             text-transform: lowercase;
